@@ -29,3 +29,31 @@ plt.title('Price Euro VS Dolar per day of the last 2 years')
 
 # plt.xticks()
 plt.show()
+
+# load data
+Dow_Jones_Industrial_Average = pd.read_csv('Dow_Jones_Industrial_Average.csv')
+
+# plot
+plt.plot(Dow_Jones_Industrial_Average['datetime'],Dow_Jones_Industrial_Average['close'])
+
+# labels & title
+plt.xlabel('Date')
+plt.ylabel('Dow_Jones_Industrial_Average (USD)')
+plt.title('Dow_Jones_Industrial_Average per day of the last 2 years')
+
+# plt.xticks()
+plt.show()
+
+# load data
+Dow_Jones_Commodity_Index = pd.read_csv('Dow_Jones_Commodity_Index.csv')
+
+# plot
+plt.plot(Dow_Jones_Commodity_Index['datetime'],Dow_Jones_Commodity_Index['close'])
+
+# labels & title
+plt.xlabel('Date')
+plt.ylabel('Dow_Jones_Commodity_Index (USD)')
+plt.title('Dow_Jones_Commodity_Index per day of the last 2 years')
+
+# plt.xticks()
+plt.show()
