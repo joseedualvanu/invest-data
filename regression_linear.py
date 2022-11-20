@@ -54,15 +54,12 @@ sns.scatterplot(x="prediction_data",
 plt.show()
 
 # Print the coeff of determination for mdl_click_vs_impression_orig
-print(mdl_btc_vs_euro.rsquared)
+print("R^2 of mdl_btc_vs_euro: " + str(mdl_btc_vs_euro.rsquared))
 
 # Calculate mse_orig for mdl_click_vs_impression_orig
 mse_orig = mdl_btc_vs_euro.mse_resid
 
 # Calculate rse_orig for mdl_btc_vs_euro and print it
 rse_orig = np.sqrt(mse_orig)
-print("RSE of mdl_btc_vs_euro: ", rse_orig)
-
-
-
+print("RSE of mdl_btc_vs_euro:", rse_orig)
 
